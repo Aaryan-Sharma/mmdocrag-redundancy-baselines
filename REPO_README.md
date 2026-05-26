@@ -31,7 +31,7 @@ Key pins: Pipeline A requires `transformers>=4.49.0` (Qwen2.5-VL + ColPali via c
 
 The evaluation dataset (v1, ~315 MB) is hosted externally:
 
-> **Download URL:** `<PLACEHOLDER — fill in before sharing>`
+> **Download URL:** `https://drive.google.com/drive/folders/1i60RKQY6wmYjtoaN3GZ7o7olyhHFoXNy?usp=sharing`
 
 Unpack into `mmdocrag_redundancy_v1/data/`:
 
@@ -214,8 +214,6 @@ All weights are downloaded automatically via `transformers` / `sentence-transfor
 ---
 
 ## Citation / Acknowledgments
-
-> **[PLACEHOLDER]** Add dataset citation, paper reference, and any acknowledgments here before making the repo public.
 
 This project uses:
 - [ColPali](https://github.com/illuin-tech/colpali) (vidore/colpali-v1.3-hf)
