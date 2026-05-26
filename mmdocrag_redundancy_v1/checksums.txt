@@ -1,0 +1,8 @@
+9a0511b52cb678cea04d812fc25d3cf4  data/original_eval.jsonl
+bd4f0e7bc3006fc0106abf82bf948d81  data/gold_redundant_eval.jsonl
+b4ef7c9b2d241cec1d4b2a715482d5a2  data/negative_redundant_eval.jsonl
+86ff67fa8551101e127189917b7596e8  data/mixed_redundant_eval.jsonl
+ea17a62051d24baafb1125889c826f3e  data/dev/original_dev.jsonl
+84de39840b6287b99260e632c7a112a5  data/dev/gold_redundant_dev.jsonl
+0abd9564f055d3ca6b206d3df2f62c1b  data/dev/negative_redundant_dev.jsonl
+972d42f295c376ad436801c38830f958  data/dev/mixed_redundant_dev.jsonl
