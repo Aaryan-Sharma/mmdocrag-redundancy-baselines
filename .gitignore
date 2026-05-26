@@ -1,0 +1,39 @@
+# Model weights and HF cache
+.cache/
+.huggingface/
+*.safetensors
+*.bin
+pytorch_model*
+
+# Virtual environments
+.venv*/
+venv*/
+__pycache__/
+*.pyc
+
+# Data files (regenerable or too large)
+images/
+*.zip
+data/mmdocrag/
+mmdocrag_redundancy_v1/data/
+
+# Retrieval caches (regenerable, large)
+results/full_eval/**/retrieval_cache*
+results/**/*_retrieval_cache.jsonl
+results/b_beam_smoke/
+
+# Score caches (regenerable)
+results/**/*_scores.jsonl
+
+# Auto-generated symlink directory (regenerable, do not commit)
+results/full_eval/merged/
+
+# Logs from intermediate runs
+*.log
+nohup.out
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/
+*.swp
