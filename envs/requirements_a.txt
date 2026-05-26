@@ -1,0 +1,18 @@
+# Pipeline A: ColPali+BGE -> Qwen2.5-VL-7B-Instruct
+# Use a dedicated venv; DO NOT mix with requirements_b.txt.
+#
+# ColPali v1.3-hf checkpoint was saved with transformers==4.48.0.dev0.
+# HF's ColPaliForRetrieval in transformers>=4.49 has incompatible key names.
+# We use colpali-engine>=0.3.0 which carries its own key-remapping logic,
+# so we can keep transformers>=4.49.0 (required for Qwen2.5-VL generation).
+
+torch>=2.2.0
+torchvision
+transformers>=4.49.0
+accelerate>=0.26.0
+sentence-transformers>=3.0.0
+colpali-engine>=0.3.0,<0.4.0
+Pillow>=10.0.0
+qwen-vl-utils
+numpy
+tqdm
