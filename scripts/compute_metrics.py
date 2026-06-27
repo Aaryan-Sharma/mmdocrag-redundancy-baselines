@@ -23,7 +23,7 @@ from bootstrap import bootstrap_ci
 from metrics_answer import compute_answer_metrics
 from metrics_retrieval import aggregate_retrieval, compute_retrieval_metrics
 
-PIPELINES = ["a", "b"]
+PIPELINES = ["a", "b", "c"]
 VARIANTS = ["original", "gold_redundant", "negative_redundant", "mixed_redundant"]
 
 ANSWER_METRICS = ["EM", "F1", "Precision", "Recall", "Jaccard"]

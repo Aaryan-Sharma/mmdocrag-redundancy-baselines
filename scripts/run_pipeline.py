@@ -198,8 +198,10 @@ def run_retrieval_phase(
     # Load retriever (once for all variants)
     if pipeline == "a":
         from pipeline_a.retriever import load_models, rerank_with_cache, unload_models
-    else:
+    elif pipeline == "b":
         from pipeline_b.retriever import load_models, rerank_with_cache, unload_models
+    else:
+        from pipeline_c.retriever import load_models, rerank_with_cache, unload_models
     load_models()
 
     out_dir.mkdir(parents=True, exist_ok=True)
@@ -282,8 +284,10 @@ def run_generation_phase(
 
     if pipeline == "a":
         from pipeline_a.generator import generate, load_model, unload_model
-    else:
+    elif pipeline == "b":
         from pipeline_b.generator import generate, load_model, unload_model
+    else:
+        from pipeline_c.generator import generate, load_model, unload_model
     load_model()
 
     t0 = time.time()
@@ -348,7 +352,7 @@ def main() -> None:
     parser = argparse.ArgumentParser(
         description="Run pipeline × variant(s) with shared model loads and score cache."
     )
-    parser.add_argument("--pipeline", choices=["a", "b"], required=True)
+    parser.add_argument("--pipeline", choices=["a", "b", "c"], required=True)
     parser.add_argument(
         "--variants",
         default=",".join(ALL_VARIANTS),

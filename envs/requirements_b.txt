@@ -9,7 +9,11 @@
 torch>=2.1.0
 torchvision
 transformers==4.40.2
-sentencepiece==0.1.99
+# sentencepiece==0.1.99  <- original pin
+# ENV PATCH (Python 3.12 / cmake-4.x compat): bumped to 0.2.0.
+# 0.1.99 has no cp312 wheel; cmake 4.x rejects its old CMakeLists.txt.
+# 0.2.0 ships a manylinux cp312 wheel; API-compatible for tokenizer use.
+sentencepiece==0.2.0
 decord==0.6.0
 Pillow>=10.0.0
 numpy
